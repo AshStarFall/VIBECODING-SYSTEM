@@ -11,6 +11,8 @@ Classify before loading guidance. A project can match multiple types; mark only 
 | LLM, agent, RAG, model/provider integration | `07-STACK-PLAYBOOKS/AI-APPLICATIONS.md`; AI security, evals, privacy, cost/latency |
 | Payments, health, identity, children, sensitive data, multi-tenant access | Threat model and security review early; ask about jurisdiction/obligations; raise human review |
 | User uploads, media, real-time, background jobs | Include storage, validation, quotas, lifecycle, abuse, and failure/retry planning |
+| User-facing flow, onboarding, checkout, support, or release readiness | Load `08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md`; select research/audit depth by project risk and evidence |
+| Collecting feedback, analytics, session recordings, or research data | Include consent, data minimization, retention, access control, redaction, and jurisdiction review |
 | Prototype, one-off script, low-risk change | Lightweight scope and only the relevant quality checks |
 
 ## Intake dimensions

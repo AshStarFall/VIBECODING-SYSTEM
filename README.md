@@ -1,4 +1,18 @@
-# VibeCoding-System
+<div align="center">
+     <img src="assets/vibecoding-system-mark.svg" width="180" alt="VibeCoding-System isometric layered V mark">
+     <h1>VibeCoding-System</h1>
+     <p><strong>A free, reusable engineering kit for building software with AI agents.</strong></p>
+     <p>From a rough idea to a specified, usable, accessible, tested, and supportable release.</p>
+     <p>
+          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=stars"></a>
+          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=forks"></a>
+          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/watchers"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=watchers"></a>
+          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/AshStarFall/VIBECODING-SYSTEM?style=flat-square"></a>
+          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/commits/main"><img alt="Latest commit" src="https://img.shields.io/github/last-commit/AshStarFall/VIBECODING-SYSTEM?style=flat-square"></a>
+     </p>
+</div>
+
+---
 
 An AI-native engineering playbook for turning a software idea into a tested, secure, maintainable release. It is an operating system for project work, not a bundle of copied prompts or an unfiltered list of links.
 
@@ -6,12 +20,23 @@ An AI-native engineering playbook for turning a software idea into a tested, sec
 
 Give your coding agent your project idea and this repository URL. Ask it to read [`AGENTS.md`](AGENTS.md), then follow [`00-CORE/VIBECODING-PROTOCOL.md`](00-CORE/VIBECODING-PROTOCOL.md). The agent should classify the project, load only relevant playbooks, ask high-impact questions, create project specifications, and wait for approval before implementation when scope is material.
 
+<details open>
+<summary><strong>Copy-ready kickoff prompt</strong></summary>
+
 ```text
 I want to build: <your idea>
 Use https://github.com/AshStarFall/VIBECODING-SYSTEM as the engineering system.
-Read AGENTS.md and follow the project protocol. Start with discovery; do not code until
-the requirements, acceptance criteria, and first implementation slice are agreed.
+Read AGENTS.md and follow 00-CORE/VIBECODING-PROTOCOL.md. Inspect my project
+repository and local instructions. First classify the project, load only relevant
+guidance, ask questions that could change scope or safety, and draft project-specific
+requirements, technical plan, and task slices. Show me the files and wait for approval
+before substantial implementation. Build in small, verified increments and report
+actual checks and remaining risks.
 ```
+
+</details>
+
+> An AI with repository access can create project-specific files in your project repo. A chat without file access can draft their contents. This kit does not automatically install frameworks or guarantee a professional outcome.
 
 ## The workflow
 
@@ -33,7 +58,7 @@ The system optimizes for useful outcomes, not code volume. It requires evidence 
 | Write requirements and architecture | [`04-PLANNING/PLANNING-WORKFLOW.md`](04-PLANNING/PLANNING-WORKFLOW.md), [`13-TEMPLATES/`](13-TEMPLATES/) |
 | Use role prompts or repeatable skills | [`05-AGENTS/`](05-AGENTS/), [`06-SKILLS/`](06-SKILLS/) |
 | Choose platform-specific guidance | [`07-STACK-PLAYBOOKS/README.md`](07-STACK-PLAYBOOKS/README.md) |
-| Improve product and avoid generic output | [`08-PRODUCT-DESIGN/`](08-PRODUCT-DESIGN/) |
+| Audit user experience, likability, usability, accessibility, and feedback | [`08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md`](08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md), [`13-TEMPLATES/EXPERIENCE-AUDIT.md`](13-TEMPLATES/EXPERIENCE-AUDIT.md) |
 | Address security, testing, and release readiness | [`09-SECURITY/SECURITY-GATES.md`](09-SECURITY/SECURITY-GATES.md), [`10-QUALITY/QUALITY-GATES.md`](10-QUALITY/QUALITY-GATES.md), [`11-DELIVERY/RELEASE-PLAYBOOK.md`](11-DELIVERY/RELEASE-PLAYBOOK.md) |
 | Find and evaluate a tool/reference | [`12-RESOURCES/README.md`](12-RESOURCES/README.md) |
 
@@ -56,7 +81,7 @@ Websites and web apps, full-stack services, Android/mobile apps, desktop apps, A
 - `00-CORE`: system rules, agent context, and lifecycle protocol.
 - `01-DISCOVERY` to `04-PLANNING`: intake, requirements, context use, specifications, and architecture.
 - `05-AGENTS` and `06-SKILLS`: copy-ready role prompts and portable task workflows.
-- `07-STACK-PLAYBOOKS` to `11-DELIVERY`: platform, product/design, security, quality, and operations.
+- `07-STACK-PLAYBOOKS` to `11-DELIVERY`: platform, product/design and experience audits, security, quality, and operations.
 - `12-RESOURCES`: deduplicated discovery index and resource-card standard.
 - `13-TEMPLATES`: project artifacts to copy into a new project.
 - `14-MAINTENANCE`: keep this system and its recommendations current.
@@ -72,3 +97,13 @@ The catalog combines resources supplied in `REPOS.txt` and `Resorce.txt`, consol
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). Keep guidance concise, tool-neutral where possible, and linked to a decision or quality outcome. See [`14-MAINTENANCE/RESOURCE-REVIEW.md`](14-MAINTENANCE/RESOURCE-REVIEW.md) before adding or refreshing references.
+
+## Usage and project activity
+
+The badges above show public GitHub signals: stars, forks, watchers, license, and latest commit. They are not counts of people who installed the kit or used it in an AI conversation.
+
+Maintainers can see recent page views and clone activity in **GitHub → Insights → Traffic**. GitHub exposes this traffic to repository owners and collaborators, not as a public lifetime usage counter. This repository does not add a third-party visitor tracker or claim an unmeasured user count.
+
+## License and security
+
+Original materials in this repository are offered under the [MIT License](LICENSE). External projects and linked materials retain their own licenses and terms. See [SECURITY.md](SECURITY.md) for private vulnerability reporting guidance.

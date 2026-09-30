@@ -11,7 +11,8 @@ You are working with the VibeCoding-System. Before acting, read this file and [`
 5. Inspect existing conventions, dependencies, tests, CI, and runtime. Prefer a small change at the owning abstraction over broad rewrites.
 6. Implement one coherent slice. After the first substantive edit, run the narrowest check that can disconfirm the implementation before exploring or editing elsewhere.
 7. Validate behavior, not only syntax. Use focused tests, type/lint/build checks, and the running app or target device when practical. Never claim an unrun check passed.
-8. Review security, accessibility, failure paths, and operational needs in proportion to project risk. Summarize changes, verification, caveats, and next decisions.
+8. For user-facing projects, use [`08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md`](08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md) to assess the critical journey, usability, user sentiment, accessibility, and feedback operations. Load its report template only when an audit is in scope.
+9. Review security, accessibility, failure paths, and operational needs in proportion to project risk. Summarize changes, verification, caveats, and next decisions.
 
 ## Guardrails
 

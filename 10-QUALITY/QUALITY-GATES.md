@@ -15,8 +15,11 @@ Choose checks based on changed boundaries and user risk. A green unit-test suite
 - Integration/contract tests for persistence, APIs, authentication, and external dependencies.
 - End-to-end tests for critical user journeys on the actual platform.
 - Accessibility and responsive checks for user-facing interfaces.
+- A scoped experience audit for user-facing launches or material flow changes, with critical findings fixed or explicitly accepted by an owner.
 - Security, performance, and reliability checks proportionate to risk.
 - Build/package/install checks for the intended release artifact.
+
+Accessibility automation is a regression net, not a conformance certificate. Combine rendered-DOM checks with manual keyboard/assistive-technology checks and, for important/high-impact products, evaluation with disabled users. Follow the applicable standard and legal obligations for the actual jurisdiction and platform.
 
 ## Completion report
 

@@ -6,6 +6,7 @@
      <p>
           <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=stars"></a>
           <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=forks"></a>
+          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/graphs/traffic"><img alt="Repository page views in the last 14 days" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAshStarFall%2FVIBECODING-SYSTEM%2Fmain%2Fdata%2Frepo-traffic.json"></a>
           <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/watchers"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=watchers"></a>
           <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/AshStarFall/VIBECODING-SYSTEM?style=flat-square"></a>
           <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/commits/main"><img alt="Latest commit" src="https://img.shields.io/github/last-commit/AshStarFall/VIBECODING-SYSTEM?style=flat-square"></a>
@@ -102,9 +103,9 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md). Keep guidance concise, tool-neutral wh
 
 ## Usage and project activity
 
-The badges above show public GitHub signals: stars, forks, watchers, license, and latest commit. They are not counts of people who installed the kit or used it in an AI conversation.
+The badges above show public GitHub signals: stars, forks, repository page views, watchers, license, and latest commit. They are not counts of people who installed the kit or used it in an AI conversation.
 
-Maintainers can see recent page views and clone activity in **GitHub → Insights → Traffic**. GitHub exposes this traffic to repository owners and collaborators, not as a public lifetime usage counter. This repository does not add a third-party visitor tracker or claim an unmeasured user count.
+GitHub's traffic API provides a rolling 14-day total and daily aggregates, not lifetime views. The badge snapshot is refreshed daily by [the traffic workflow](.github/workflows/repo-traffic.yml); GitHub can delay scheduled runs. To enable it, create a fine-grained token limited to this repository with **Administration: read**, then save it under **Settings → Secrets and variables → Actions** as `REPO_TRAFFIC_TOKEN`. The workflow uses that secret only to read GitHub's aggregate traffic API; the workflow's separate `GITHUB_TOKEN` publishes the aggregate JSON badge data. Until configured, the badge says setup required. Never put the token in a file or prompt. Maintainers can also inspect GitHub → Insights → Traffic directly. The count is repository-page traffic, not profile views or individual people.
 
 ## License and security
 

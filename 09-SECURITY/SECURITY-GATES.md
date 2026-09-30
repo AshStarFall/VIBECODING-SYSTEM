@@ -17,4 +17,6 @@ Scale depth to exposed data and impact. For sensitive, regulated, financial, ide
 - For AI: test prompt injection, retrieval isolation, output validation, tool permissions, data leakage, and abuse/cost controls.
 - For mobile/desktop: inspect permissions, local storage, deep links/IPC, update channels, and release signing.
 
+Active penetration-testing tools such as [Strix](https://github.com/usestrix/strix) can send requests, attempt exploits, and validate findings. Run them only with explicit authorization and written target scope, preferably against isolated staging with synthetic data and bounded credentials. Review LLM/provider data handling and every finding or proposed fix. Never aim active scans at a production or third-party system without documented permission.
+
 Use OWASP ASVS/Top 10, MASVS/MASTG, and GenAI guidance as scoped references, not proof of security. Record findings, evidence, mitigations, and accepted residual risks. Do not run intrusive scans without authorization.

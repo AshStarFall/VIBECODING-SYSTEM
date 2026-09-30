@@ -1,5 +1,5 @@
 <div align="center">
-     <img src="assets/VibeCoding-System_logo_unique_boot.gif" width="180" alt="VibeCoding-System animated logo">
+     <img src="assets/VibeCoding-System_logo_unique_boot.gif" width="220" alt="VibeCoding-System animated logo">
      <h1>VibeCoding-System</h1>
      <p><strong>A free, reusable engineering kit for building software with AI agents.</strong></p>
      <p>From a rough idea to a specified, usable, accessible, tested, and supportable release.</p>

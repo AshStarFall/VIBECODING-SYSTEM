@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/vibe-coding-kit.png" width="220" alt="vibe-coding-kit logo">
+<img src="assets/vibe-coding-kit.png" width="420" alt="vibe-coding-kit logo">
 
 # ⚡ vibe-coding-kit
 

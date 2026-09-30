@@ -1,6 +1,6 @@
 # Educational Use Disclaimer
 
-VibeCoding-System is a free educational resource for vibecoders, software learners, and people using AI coding tools. It provides general engineering guidance, examples, templates, and links to third-party resources.
+vibe-coding-kit is a free educational resource for vibecoders, software learners, and people using AI coding tools. It provides general engineering guidance, examples, templates, and links to third-party resources.
 
 This repository is not legal, security, privacy, accessibility-conformance, financial, or other professional advice. It does not create a professional-client relationship, and it does not guarantee that AI-generated or AI-assisted code is correct, secure, lawful, accessible, or suitable for production. Tools, standards, licenses, provider terms, and laws can change; check the current authoritative sources for your project and jurisdiction.
 

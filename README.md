@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/vibe-coding-kit.png" width="220" alt="VibeCoding-System logo">
+<img src="assets/vibe-coding-kit.png" width="220" alt="vibe-coding-kit logo">
 
-# ⚡ VibeCoding-System
+# ⚡ vibe-coding-kit
 
 ### A free, reusable engineering kit for building software with AI agents
 
@@ -39,7 +39,7 @@
 
 ## ✨ What is this?
 
-**VibeCoding-System** is an AI-native engineering playbook for turning a software idea into a tested, secure, maintainable release. It works as an **operating system for project work**: rules, workflows, role prompts, playbooks, quality gates, and templates that a coding agent (or a human) can follow from first idea to supportable release.
+**vibe-coding-kit** is an AI-native engineering playbook for turning a software idea into a tested, secure, maintainable release. It works as an **operating system for project work**: rules, workflows, role prompts, playbooks, quality gates, and templates that a coding agent (or a human) can follow from first idea to supportable release.
 
 It is **not** a bundle of copied prompts or an unfiltered list of links.
 

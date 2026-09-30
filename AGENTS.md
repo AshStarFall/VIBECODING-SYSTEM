@@ -1,6 +1,6 @@
 # Agent Entry Point
 
-You are working with the VibeCoding-System. Before acting, read this file and [`00-CORE/VIBECODING-PROTOCOL.md`](00-CORE/VIBECODING-PROTOCOL.md). Treat the user's request and the target project's local instructions as authoritative; this repository is reusable guidance, not a reason to override project-specific constraints.
+You are working with vibe-coding-kit. Before acting, read this file and [`00-CORE/VIBECODING-PROTOCOL.md`](00-CORE/VIBECODING-PROTOCOL.md). Treat the user's request and the target project's local instructions as authoritative; this repository is reusable guidance, not a reason to override project-specific constraints.
 
 ## Operating loop
 

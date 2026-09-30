@@ -95,7 +95,7 @@ def request_json(url: str, token: str) -> dict[str, object]:
             "Accept": "application/vnd.github+json",
             "Authorization": f"Bearer {token}",
             "X-GitHub-Api-Version": API_VERSION,
-            "User-Agent": "VibeCoding-System-traffic-badge",
+            "User-Agent": "vibe-coding-kit-traffic-badge",
         },
     )
     with urlopen(request, timeout=30) as response:
@@ -107,7 +107,7 @@ def request_json(url: str, token: str) -> dict[str, object]:
 
 def main() -> int:
     token = os.environ.get("TRAFFIC_TOKEN", "").strip()
-    repository = os.environ.get("GITHUB_REPOSITORY", "AshStarFall/VIBECODING-SYSTEM")
+    repository = os.environ.get("GITHUB_REPOSITORY", "brand-new-spidey/vibe-coding-kit")
     if not token:
         print("REPO_TRAFFIC_TOKEN is not configured; leaving the badge unchanged.")
         return 0

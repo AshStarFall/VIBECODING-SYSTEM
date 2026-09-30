@@ -1,14 +1,14 @@
 <div align="center">
-     <img src="assets/VibeCoding-System_logo_unique_boot.gif" width="220" alt="VibeCoding-System animated logo">
+     <img src="assets/vibe-coding-kit.png" width="220" alt="VibeCoding-System logo">
      <h1>VibeCoding-System</h1>
      <p><strong>A free, reusable engineering kit for building software with AI agents.</strong></p>
      <p>From a rough idea to a specified, usable, accessible, tested, and supportable release.</p>
      <p>
-          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=stars"></a>
-          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=forks"></a>
-          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/watchers"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/AshStarFall/VIBECODING-SYSTEM?style=flat-square&label=watchers"></a>
-          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/AshStarFall/VIBECODING-SYSTEM?style=flat-square"></a>
-          <a href="https://github.com/AshStarFall/VIBECODING-SYSTEM/commits/main"><img alt="Latest commit" src="https://img.shields.io/github/last-commit/AshStarFall/VIBECODING-SYSTEM?style=flat-square"></a>
+          <a href="https://github.com/brand-new-spidey/vibe-coding-kit/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/brand-new-spidey/vibe-coding-kit?style=flat-square&label=stars"></a>
+          <a href="https://github.com/brand-new-spidey/vibe-coding-kit/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/brand-new-spidey/vibe-coding-kit?style=flat-square&label=forks"></a>
+          <a href="https://github.com/brand-new-spidey/vibe-coding-kit/watchers"><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/brand-new-spidey/vibe-coding-kit?style=flat-square&label=watchers"></a>
+          <a href="https://github.com/brand-new-spidey/vibe-coding-kit/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/github/license/brand-new-spidey/vibe-coding-kit?style=flat-square"></a>
+          <a href="https://github.com/brand-new-spidey/vibe-coding-kit/commits/main"><img alt="Latest commit" src="https://img.shields.io/github/last-commit/brand-new-spidey/vibe-coding-kit?style=flat-square"></a>
      </p>
 </div>
 
@@ -27,7 +27,7 @@ Give your coding agent your project idea and this repository URL. Ask it to read
 
 ```text
 I want to build: <your idea>
-Use https://github.com/AshStarFall/VIBECODING-SYSTEM as the engineering system.
+Use https://github.com/brand-new-spidey/vibe-coding-kit as the engineering system.
 Read AGENTS.md and follow 00-CORE/VIBECODING-PROTOCOL.md. Inspect my project
 repository and local instructions. First classify the project, load only relevant
 guidance, ask questions that could change scope or safety, and draft project-specific

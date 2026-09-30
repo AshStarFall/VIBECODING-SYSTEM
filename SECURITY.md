@@ -7,7 +7,7 @@ This repository contains engineering guidance, templates, and external resource 
 Please do not publish exploit details, credentials, private user data, or an unpatched vulnerability in a public issue or discussion.
 
 1. If GitHub's **Private vulnerability reporting** is enabled for this repository, use the repository's **Security** tab to submit a private report.
-2. If private reporting is unavailable, contact the repository maintainer through the private contact method listed on the [AshStarFall GitHub profile](https://github.com/AshStarFall). Do not include sensitive data unless it is necessary and safe to share.
+2. If private reporting is unavailable, contact the repository maintainer through the private contact method listed on the [brand-new-spidey GitHub profile](https://github.com/brand-new-spidey). Do not include sensitive data unless it is necessary and safe to share.
 3. Include the affected file or link, steps to reproduce, potential impact, and any suggested mitigation. Redact tokens, personal information, and unrelated system details.
 
 The maintainer will make a reasonable effort to acknowledge reports and coordinate a fix or clarification. Response timing depends on availability; no service-level agreement is implied. Please allow time for investigation and a coordinated disclosure before sharing details publicly.

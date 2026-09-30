@@ -14,9 +14,27 @@
 
 ---
 
-An AI-native engineering playbook for turning a software idea into a tested, secure, maintainable release. It is an operating system for project work, not a bundle of copied prompts or an unfiltered list of links.
+VibeCoding-System is an AI-native engineering playbook for turning a software idea into a tested, secure, maintainable release. It works as an operating system for project work: a set of rules, workflows, role prompts, playbooks, quality gates, and templates that a coding agent (or a human) can follow from first idea to supportable release. It is not a bundle of copied prompts or an unfiltered list of links.
 
 > **Educational use:** This free kit is made for vibecoders and people learning to build software with AI. It provides general guidance and is not legal, security, or compliance advice. Read the full [disclaimer](DISCLAIMER.md).
+
+## Who this is for
+
+- **Vibecoders and learners** who build with AI assistants and want a structure that prevents rework, insecure code, and unfinished products.
+- **Solo builders and small teams** who want a lightweight, repeatable process without heavy tooling.
+- **Anyone directing a coding agent** who wants consistent behavior: clarify first, plan, build in small verified steps, and report honestly.
+
+## What you get
+
+- **Agent operating rules** that any coding agent can follow (`AGENTS.md`, `00-CORE/`).
+- **Discovery and question frameworks** that expose ambiguity before code is written.
+- **Planning workflow and templates** for requirements, architecture, and task slices.
+- **Role prompts and portable skills** for repeatable tasks.
+- **Stack playbooks** for web, full-stack, mobile, desktop, and AI/LLM projects.
+- **Product design and experience audits** covering usability, likability, accessibility, and feedback.
+- **Security, quality, and release gates** so "done" means verified, not assumed.
+- **A curated resource index** with a selection standard for tools and references.
+- **Maintenance guidance** to keep the system itself current.
 
 ## Start here
 
@@ -38,7 +56,15 @@ actual checks and remaining risks.
 
 </details>
 
-> An AI with repository access can create project-specific files in your project repo. A chat without file access can draft their contents. This kit does not automatically install frameworks or guarantee a professional outcome.
+> An AI with repository access can create project-specific files in your project repo. A chat without file access can draft their contents for you to save yourself. This kit does not automatically install frameworks or guarantee a professional outcome.
+
+## Quick start
+
+1. Open your coding agent inside your **project** repository (or an empty folder for a new project).
+2. Paste the kickoff prompt above with your idea filled in.
+3. Answer the agent's clarifying questions.
+4. Review the generated requirements, technical plan, and task slices. Approve or change them.
+5. Let the agent build in small increments, and check the reported test results and remaining risks at each step.
 
 ## The workflow
 
@@ -56,13 +82,15 @@ The system optimizes for useful outcomes, not code volume. It requires evidence 
 | Give an agent durable operating rules | [`AGENTS.md`](AGENTS.md), [`00-CORE/SYSTEM-RULES.md`](00-CORE/SYSTEM-RULES.md) |
 | Triage an idea and decide what to load | [`01-DISCOVERY/PROJECT-TRIAGE.md`](01-DISCOVERY/PROJECT-TRIAGE.md) |
 | Ask better questions and expose ambiguity | [`01-DISCOVERY/QUESTION-FRAMEWORK.md`](01-DISCOVERY/QUESTION-FRAMEWORK.md) |
+| Keep project memory and decisions organized | [`02-MEMORY/`](02-MEMORY/) |
 | Keep context and token use lean | [`03-CONTEXT/CONTEXT-POLICY.md`](03-CONTEXT/CONTEXT-POLICY.md) |
 | Write requirements and architecture | [`04-PLANNING/PLANNING-WORKFLOW.md`](04-PLANNING/PLANNING-WORKFLOW.md), [`13-TEMPLATES/`](13-TEMPLATES/) |
 | Use role prompts or repeatable skills | [`05-AGENTS/`](05-AGENTS/), [`06-SKILLS/`](06-SKILLS/) |
 | Choose platform-specific guidance | [`07-STACK-PLAYBOOKS/README.md`](07-STACK-PLAYBOOKS/README.md) |
 | Audit user experience, likability, usability, accessibility, and feedback | [`08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md`](08-PRODUCT-DESIGN/EXPERIENCE-AUDIT.md), [`13-TEMPLATES/EXPERIENCE-AUDIT.md`](13-TEMPLATES/EXPERIENCE-AUDIT.md) |
 | Address security, testing, and release readiness | [`09-SECURITY/SECURITY-GATES.md`](09-SECURITY/SECURITY-GATES.md), [`10-QUALITY/QUALITY-GATES.md`](10-QUALITY/QUALITY-GATES.md), [`11-DELIVERY/RELEASE-PLAYBOOK.md`](11-DELIVERY/RELEASE-PLAYBOOK.md) |
-| Find and evaluate a tool/reference | [`12-RESOURCES/README.md`](12-RESOURCES/README.md) |
+| Find and evaluate a tool or reference | [`12-RESOURCES/README.md`](12-RESOURCES/README.md) |
+| Keep this system current | [`14-MAINTENANCE/RESOURCE-REVIEW.md`](14-MAINTENANCE/RESOURCE-REVIEW.md) |
 
 ## Project types covered
 
@@ -72,7 +100,7 @@ Websites and web apps, full-stack services, Android/mobile apps, desktop apps, A
 
 - Discover the user, real problem, desired outcome, and constraints before selecting a stack.
 - Keep an explicit distinction between requirements, decisions, assumptions, and open questions.
-- Prefer the smallest complete vertical slice; build schema/contracts before dependent layers.
+- Prefer the smallest complete vertical slice; build schema and contracts before dependent layers.
 - Treat security, privacy, accessibility, and operations as design concerns, not end-of-project decorations.
 - Use tests and live behavior to verify claims; report what was and was not checked.
 - Select tools by fit, risk, maintenance, setup cost, and context cost. Do not add tools to look sophisticated.
@@ -80,17 +108,33 @@ Websites and web apps, full-stack services, Android/mobile apps, desktop apps, A
 
 ## Repository map
 
-- `00-CORE`: system rules, agent context, and lifecycle protocol.
-- `01-DISCOVERY` to `04-PLANNING`: intake, requirements, context use, specifications, and architecture.
-- `05-AGENTS` and `06-SKILLS`: copy-ready role prompts and portable task workflows.
-- `07-STACK-PLAYBOOKS` to `11-DELIVERY`: platform, product/design and experience audits, security, quality, and operations.
-- `12-RESOURCES`: deduplicated discovery index and resource-card standard.
-- `13-TEMPLATES`: project artifacts to copy into a new project.
-- `14-MAINTENANCE`: keep this system and its recommendations current.
+| Path | Purpose |
+| --- | --- |
+| `AGENTS.md` | Canonical, portable entrypoint for coding agents. |
+| `00-CORE` | System rules, agent context, and lifecycle protocol. |
+| `01-DISCOVERY` | Project triage, intake, and question framework. |
+| `02-MEMORY` | Guidance for keeping durable project memory, decisions, and assumptions. |
+| `03-CONTEXT` | Context and token-use policy. |
+| `04-PLANNING` | Requirements, specifications, architecture, and task slicing. |
+| `05-AGENTS` | Copy-ready role prompts. |
+| `06-SKILLS` | Portable, repeatable task workflows. |
+| `07-STACK-PLAYBOOKS` | Platform- and stack-specific guidance. |
+| `08-PRODUCT-DESIGN` | Product design and experience audits. |
+| `09-SECURITY` | Security gates and practices. |
+| `10-QUALITY` | Testing and quality gates. |
+| `11-DELIVERY` | Release and operations playbooks. |
+| `12-RESOURCES` | Deduplicated discovery index and resource-card standard. |
+| `13-TEMPLATES` | Project artifacts to copy into a new project. |
+| `14-MAINTENANCE` | Keeping this system and its recommendations current. |
+| `assets` | Logo and other repository media. |
+| `data` | Supporting data files, such as aggregate traffic data for the repository badge. |
+| `scripts` | Helper scripts used by repository automation. |
+| `.github/workflows` | GitHub Actions workflows, including the daily traffic snapshot. |
+| `CONTRIBUTING.md`, `DISCLAIMER.md`, `SECURITY.md`, `LICENSE` | Contribution, educational-use, security, and license information. |
 
 ## Resource handling
 
-The catalog combines resources supplied in `REPOS.txt` and `Resorce.txt`, consolidates repeated entries, and adds broad categories identified in the notes. It records selection guidance rather than mirroring external repositories. Links are discovery leads, not endorsements or current compatibility guarantees. Verify activity, official documentation, security posture, license, pricing, and platform fit before adoption. No supplied screenshot archive or third-party source content is redistributed here.
+The resource catalog consolidates repeated entries and records selection guidance rather than mirroring external repositories. Links are discovery leads, not endorsements or current compatibility guarantees. Verify activity, official documentation, security posture, license, pricing, and platform fit before adoption. No third-party source content or screenshot archive is redistributed here.
 
 ## Use with any coding agent
 
@@ -102,11 +146,11 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md). Keep guidance concise, tool-neutral wh
 
 ## Usage and project activity
 
-The badges above show public GitHub signals: stars, forks, repository page views, watchers, license, and latest commit. They are not counts of people who installed the kit or used it in an AI conversation.
+The badges above show public GitHub signals: stars, forks, watchers, license, and latest commit. They are not counts of people who installed the kit or used it in an AI conversation.
 
-The badge is a cumulative count of repository page views, retained in the repository without an expiry. GitHub only exposes the latest 14 days of source traffic, so the first workflow run must happen within 14 days of repository creation to seed a complete-from-creation total. Daily snapshots are added to the stored total; if setup happens later or collection misses the API retention window, the badge marks the total as partial because expired history cannot be recovered. The badge measures page-view events, not distinct people, profile views, installs, or AI-kit usage.
+This repository also includes an optional [traffic workflow](.github/workflows/repo-traffic.yml) that keeps a cumulative count of repository page views. GitHub only exposes the latest 14 days of traffic, so history that expired before the workflow first ran cannot be recovered, and the total is marked as partial in that case. The count measures page-view events, not distinct people, installs, or AI-kit usage.
 
-The [traffic workflow](.github/workflows/repo-traffic.yml) refreshes the cumulative counter daily; GitHub can delay scheduled runs. To enable it, create a fine-grained token limited to this repository with **Administration: read**, then save it under **Settings → Secrets and variables → Actions** as `REPO_TRAFFIC_TOKEN`. The workflow uses that secret only to read GitHub's aggregate traffic API; its separate `GITHUB_TOKEN` publishes the aggregate JSON badge data. Until configured, the badge says setup required. Never put the token in a file or prompt. Maintainers can also inspect GitHub → Insights → Traffic directly.
+To enable it, create a fine-grained token limited to this repository with **Administration: read**, then save it under **Settings → Secrets and variables → Actions** as `REPO_TRAFFIC_TOKEN`. The workflow uses that secret only to read GitHub's aggregate traffic API. A separate `GITHUB_TOKEN` publishes the aggregate JSON badge data. GitHub can delay scheduled runs. Never put the token in a file or prompt. Maintainers can also inspect GitHub → Insights → Traffic directly.
 
 ## License and security
 

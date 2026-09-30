@@ -1,10 +1,10 @@
 {
-  "schemaVersion": 1,
-  "label": "repo views (14d)",
+  "schemaVersion": 2,
+  "label": "repo views",
   "message": "setup required",
   "color": "lightgrey",
-  "views": null,
-  "uniqueVisitors": null,
-  "windowDays": 14,
+  "allTimeViews": null,
+  "trackingStartedAt": null,
+  "historyComplete": null,
   "updatedAt": null
 }
